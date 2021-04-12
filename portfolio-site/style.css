@@ -16,12 +16,6 @@
     z-index: 1;
   }
   
-  img {
-    width: 100px;
-    border-radius: 40%;
-    justify-content: flex-start;
-    height: auto;
-  }
   #nav-bar ul {
     display: flex;
   }
@@ -65,10 +59,6 @@
       font-size: 1rem;
       text-align: center;
     }
-    header img {
-      display: none;
-      width: 0;
-    }
   }
   
   h1 {
@@ -100,50 +90,20 @@
     margin: auto;
     width: 100%;
   }
-  #video-section > iframe {
-    max-width: 560px;
-    height: 315px;
-    width: 100%;
-  }
+
   
-  #social-media {
-    width: 100%;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-evenly;
-    text-align: center;
-    margin: 20px;
-  }
-  
-  #facebook-link {
-    order: 1;
-    margin: 5px;
-    flex: 0 0 20%;
-  }
-  
-  #instagram-link {
-    order: 2;
-    margin: 5px;
-    flex: 0 0 20%;
-  }
-  #whatsapp-link {
-    order: 3;
-    margin: 5px;
-    flex: 0 0 20%;
-  }
-  
-  #gig-dates {
+  #skills {
     display: flex;
     justify-content: space-evenly;
     flex-flow: row wrap;
   }
   
-  #gigs-heading {
+  #skills-heading {
     order: 1;
     flex: 0 0 100%;
   }
   
-  #next-gig {
+  #my-skills {
     border: dotted rgb(130, 178, 255) 1px;
     padding: 10px;
     margin: 10px;
@@ -152,7 +112,7 @@
     background-color: #ffc43b;
   }
   
-  #upcoming-gigs {
+  #learning-list {
     border: dotted rgb(130, 178, 255) 1px;
     margin: 10px;
     order: 3;
@@ -162,46 +122,29 @@
   }
   
   @media (max-width: 800px) {
-    #video-section > iframe {
-      max-width: 280px;
-      max-height: 140px;
-    }
-    #social-media{
-      max-width:90%;
-    }
-    #facebook-link {
-      max-width: 30%;
-    }
-  
-    #instagram-link {
-      max-width: 30%;
-    }
-    #whatsapp-link {
-      max-width: 30%;
-    }
-    #gig-dates {
+    #skills {
       display: flex;
       justify-content: center;
       flex-flow: columun wrap;
     }
-    #next-gig {
+    #my-skills {
       order: 2;
       flex: 0 0 80%;
     }
   
-    #upcoming-gigs {
+    #learning-list {
       order: 3;
       flex: 0 0 80%;
     }
   }
   
-  #testimonials {
+  #projects {
     height: auto;
     margin: auto;
     font-size: 1rem;
   }
   
-  #flex-wrapper-testimonial {
+  #flex-wrapper-projects {
     display: flex;
     flex-flow: row wrap;
     text-align: center;
@@ -213,29 +156,36 @@
     font-size: 0.9rem;
     color: black;
   }
-  #top-testimonial {
+  #top-left-projects {
     order: 1;
     background-color: #ffc43b;
     margin: 15px;
     padding: 15px;
-    flex: 0 0 80%;
-  }
-  #left-testimonial {
-    order: 2;
-    background-color: #ffc43b;
-    margin: 5px;
-    padding: 5px;
     flex: 0 0 40%;
   }
-  #right-testimonial {
+  #top-right-projects {
+    order: 2;
+    background-color: #ffc43b;
+    margin: 15px;
+    padding: 15px;
+    flex: 0 0 40%;
+  }
+  #bottom-left-projects {
     order: 3;
     background-color: #ffc43b;
-    margin: 5px;
-    padding: 5px;
+    margin: 15px;
+    padding: 15px;
+    flex: 0 0 40%;
+  }
+  #bottom-right-projects {
+    order: 4;
+    background-color: #ffc43b;
+    margin: 15px;
+    padding: 15px;
     flex: 0 0 40%;
   }
   @media (max-width: 800px) {
-    #flex-wrapper-testimonial {
+    #flex-wrapper-projects {
       display: flex;
       flex-flow: row wrap;
       text-align: center;
@@ -247,20 +197,26 @@
       font-size: 0.9rem;
       color: black;
     }
-    #top-testimonial {
+    #top-left-projects {
       order: 1;
       margin: 10px;
       padding: 10px;
       flex: 0 0 80%;
     }
-    #left-testimonial {
-      order: 2;
+    #top-right-projects {
+        order: 2;
+        margin: 10px;
+        padding: 10px;
+        flex: 0 0 80%;
+      }
+    #bottom-left-projects {
+      order: 3;
       margin: 10px;
       padding: 10px;
       flex: 0 0 80%;
     }
-    #right-testimonial {
-      order: 3;
+    #bottom-right-projects {
+      order: 4;
       margin: 10px;
       padding: 10px;
       flex: 0 0 80%;
