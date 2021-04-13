@@ -186,10 +186,10 @@
     flex: 0 0 40%;
   }
   .project-example-img{
-    height: 25px;
-    width: 25px;
+    height: 10px;
+    width: 10px;
     margin:auto;
-    padding: 10px;
+    padding: auto;
   }
   @media (max-width: 800px) {
     .flex-wrapper-projects {
