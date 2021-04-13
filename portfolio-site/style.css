@@ -144,6 +144,13 @@
     font-size: 1rem;
   }
   
+  .project-example-img{
+    height: auto;
+    width: 80%;
+    margin:auto;
+    padding: 10px;
+  }
+
   #flex-wrapper-projects {
     display: flex;
     flex-flow: row wrap;
