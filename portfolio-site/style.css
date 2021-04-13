@@ -3,7 +3,7 @@
   }
   header {
     position: fixed;
-    color: white;
+    color: #EEA47FFF;
     width: 100vw;
     height: 40px;
     display: flex;
@@ -12,7 +12,7 @@
     font-weight: bold;
     margin-bottom: 30px;
     top: 0;
-    background-color: #0b172a;
+    background-color: #00539CFF;
     z-index: 1;
   }
   
@@ -24,7 +24,7 @@
     margin: 20px;
   }
   nav a {
-    color: #fff;
+    color: #EEA47FFF;
     text-decoration: none;
   }
   
@@ -63,19 +63,19 @@
   
   h1 {
     font-size: 6vw;
-    color: #5cdb95;
+    color: #EEA47FFF;
   }
   #slogan {
     font-size: 3vw;
-    color: #5cdb95;
+    color: #EEA47FFF;
   }
   h2 {
-    color: #5cdb95;
+    color: #EEA47FFF;
     font-size: 3vw;
   }
   
   body {
-    background-color: #0b172a;
+    background-color: #00539CFF;
   }
   main {
     margin-top: 50px;
@@ -109,7 +109,7 @@
     margin: 10px;
     order: 2;
     flex: 0 0 40%;
-    background-color: #ffc43b;
+    background-color: #ee4c7c;
   }
   
   #learning-list {
@@ -118,7 +118,7 @@
     order: 3;
     flex: 0 0 40%;
     padding: 10px;
-    background-color: #ffc43b;
+    background-color: #ee4c7c;
   }
   
   @media (max-width: 800px) {
@@ -159,28 +159,28 @@
   }
   #top-left-projects {
     order: 1;
-    background-color: #ffc43b;
+    background-color: #ee4c7c;
     margin: 15px;
     padding: 15px;
     flex: 0 0 40%;
   }
   #top-right-projects {
     order: 2;
-    background-color: #ffc43b;
+    background-color: #ee4c7c;
     margin: 15px;
     padding: 15px;
     flex: 0 0 40%;
   }
   #bottom-left-projects {
     order: 3;
-    background-color: #ffc43b;
+    background-color: #ee4c7c;
     margin: 15px;
     padding: 15px;
     flex: 0 0 40%;
   }
   #bottom-right-projects {
     order: 4;
-    background-color: #ffc43b;
+    background-color: #ee4c7c;
     margin: 15px;
     padding: 15px;
     flex: 0 0 40%;
@@ -246,7 +246,7 @@
   }
   
   form {
-    color: #5cdb95;
+    color: #EEA47FFF;
   }
   
   #enquiry {
@@ -263,7 +263,7 @@
       text-align: center;
       margin: 20px 0;
       padding-top: 10px;
-      color: #5cdb95;
+      color: #EEA47FFF;
     }
   @media (max-width:800px){ footer{
     width:100%;
