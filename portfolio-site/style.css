@@ -146,7 +146,7 @@
   
   .project-example-img{
     height: auto;
-    width: 50%;
+    max-width: 50%;
     margin:auto;
     padding: 10px;
   }
