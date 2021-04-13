@@ -145,7 +145,7 @@
   }
   
 
-  #flex-wrapper-projects {
+  .flex-wrapper-projects {
     display: flex;
     flex-flow: row wrap;
     text-align: center;
@@ -192,7 +192,7 @@
     padding: 10px;
   }
   @media (max-width: 800px) {
-    #flex-wrapper-projects {
+    .flex-wrapper-projects {
       display: flex;
       flex-flow: row wrap;
       text-align: center;
