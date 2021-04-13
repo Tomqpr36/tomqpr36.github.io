@@ -144,12 +144,6 @@
     font-size: 1rem;
   }
   
-  .project-example-img{
-    height: 250px;
-    width: 250px;
-    margin:auto;
-    padding: 10px;
-  }
 
   #flex-wrapper-projects {
     display: flex;
@@ -190,6 +184,12 @@
     margin: 15px;
     padding: 15px;
     flex: 0 0 40%;
+  }
+  .project-example-img{
+    height: 250px;
+    width: 250px;
+    margin:auto;
+    padding: 10px;
   }
   @media (max-width: 800px) {
     #flex-wrapper-projects {
