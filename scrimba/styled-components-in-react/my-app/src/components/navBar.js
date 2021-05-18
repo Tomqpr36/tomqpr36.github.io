@@ -3,7 +3,7 @@ import React from 'react'
 function navBar() {
     return (
         <div>
-           MOO 
+           THIS IS THE NAV BAR 
         </div>
     )
 }
