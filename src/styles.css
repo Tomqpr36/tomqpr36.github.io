@@ -96,6 +96,7 @@ p {
     display: flex;
     justify-content: space-around;
     padding:80px;
+    text-align: center;
 }
 .sub-section-alt {
     display: flex;
@@ -179,4 +180,13 @@ a {
     ul.show {
         display: block;
     }
+}
+
+.birthday-countdown {
+    display: flex;
+    padding: 10px;
+    margin: auto;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
 }
