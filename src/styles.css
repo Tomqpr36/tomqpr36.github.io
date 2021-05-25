@@ -193,3 +193,28 @@ a {
     flex-direction: column;
     flex-wrap: nowrap;
 }
+.form-control {
+    display: block;
+    width: 100%;
+    height: 1rem;
+    padding: 1.5rem 1rem;
+    background-color: #fff;
+    background-clip: padding-box;
+    border-radius: 0.5rem;
+    margin: 10px;
+    
+
+  }
+  
+  .form-control:focus {
+    border-color: #80bdff;
+    outline: 1;
+    box-shadow: 5px 5px 20px rgb(172, 172, 172);
+  }
+  .submit-btn{
+      width: 50%;
+      height: 1.5rem;
+      background-color: #fff;
+      margin: 10px;
+      border-radius: 0.5rem;
+  }
