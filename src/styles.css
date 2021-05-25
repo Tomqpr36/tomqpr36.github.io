@@ -47,8 +47,9 @@ p {
     font-size: 30px;
 }
 .subtext{
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 300;
+    padding: 10px;
 }
 .hero-area {
     display: flex;
