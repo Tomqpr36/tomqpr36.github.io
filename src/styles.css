@@ -51,6 +51,10 @@ p {
     font-weight: 300;
     padding: 5px;
 }
+.subtext a{
+    text-decoration: none;
+    color: black;
+}
 .hero-area {
     display: flex;
     height: 100%;
@@ -122,7 +126,7 @@ p {
 }
 @media only screen and (max-width: 1000px) {
     .subtext{
-        font-size: 14px;
+        font-size: 13px;
     }
     .project-container {
         display: flex;
@@ -134,6 +138,7 @@ p {
     height: 500px;
     margin: 10px;
     box-shadow: 5px 5px 20px rgb(172, 172, 172);
+    
 }
 .project-img {
     margin-top: 25px;
