@@ -38,7 +38,7 @@ a {
   text-decoration: none;
   color: rgb(0, 0, 205);
 }
-ul { 
+nav ul { 
   width: 100%;
   font-size: 30px;
   text-align: center;
@@ -46,7 +46,7 @@ ul {
   padding: 0 0;
 }
 
-li {
+nav li {
   border: solid rgb(130, 178, 255) 1px;
   background-color: white;
   border-radius: 15px;
@@ -57,7 +57,7 @@ li {
   list-style-type: none;
   font-size: 1.5rem;
 }
-li:hover {
+nav li:hover {
   background-color: rgb(214, 214, 214);
   
 }
@@ -112,6 +112,21 @@ li:hover {
 #open-times {
   font-size: 2rem;
   color: rgb(0, 0, 205);
+}
+
+#our-range-container{
+  display: flex;
+  flex-wrap: wrap;
+
+}
+#our-range{
+  flex: 100%;
+}
+#flex-list{
+  flex: 50%;
+  color: rgb(0, 0, 205);
+  font-size: 1.8rem;
+  text-align: left;
 }
 
 .contact-options {
