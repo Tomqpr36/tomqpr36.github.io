@@ -1,273 +1,89 @@
-#page-wrapper {
-    align-content: center;
-  }
-  header {
-    position: fixed;
-    color: #EEA47FFF;
-    width: 100vw;
-    height: 40px;
-    display: flex;
-    justify-content: space-around;
-    font-family: courier new, monospace;
-    font-weight: bold;
-    margin-bottom: 30px;
-    top: 0;
-    background-color: #00539CFF;
-    z-index: 1;
-  }
-  
-  #nav-bar ul {
-    display: flex;
-  }
-  .nav-link {
-    padding: 20px;
-    margin: 20px;
-  }
-  nav a {
-    color: #EEA47FFF;
-    text-decoration: none;
-  }
-  
-  nav a:hover {
-    color: #5cdb95;
-  }
-  
-  nav ul {
-    list-style: none;
-  }
-  
-  a {
-    color: black;
-  }
-  
-  a:hover {
-    color: Blue;
-  }
-  
-  @media (max-width: 800px) {
-    header {
-      width: 100%;
-      display: flex;
-      z-index: 1;
-      justify-content: space-around;
-    }
-    .nav-link {
-      padding: 0;
-      margin: 10px;
-    }
-    nav ul {
-      font-size: 1rem;
-      text-align: center;
-    }
-  }
-  
-  h1 {
-    font-size: 6vw;
-    color: #EEA47FFF;
-  }
-  #slogan {
-    font-size: 3vw;
-    color: #EEA47FFF;
-  }
-  h2 {
-    color: #EEA47FFF;
-    font-size: 3vw;
-  }
-  
-  body {
-    background-color: #00539CFF;
-  }
-  main {
-    margin-top: 50px;
-    position: relative;
-    width: auto;
-    color: black;
-    text-align: center;
-    font-size: 0.9rem;
-    font-family: courier new, monospace;
-  }
-  section {
-    margin: auto;
-    width: 100%;
-  }
+body{
+  animation-name: hero-fade;
+  animation-duration: 3s;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+  color: rgb(0, 0, 205);
+  font-size: 3rem;
+}
+h2 {
+  font-size: 1rem;
+}
+nav{
+  display: flex;
+  position: relative;
+  top:0;
+  z-index: 0;
+}
+#nav-list{
+  display: flex;
+  justify-content: space-around;
+}
+a {
+  text-decoration: none;
+  color: blue;
+}
+ul { 
+  width: 100%;
+  font-size: 30px;
+  text-align: center;
+  margin: 10px 0 ;
+  padding: 0 0;
+}
 
+li {
+  border: solid rgb(130, 178, 255) 1px;
+  background-color: white;
+  border-radius: 15px;
+  width: 25%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5px;
+  list-style-type: none;
+}
+li:hover {
+  background-color: rgb(214, 214, 214);
   
-  #skills {
-    display: flex;
-    justify-content: space-evenly;
-    flex-flow: row wrap;
-  }
-  
-  #skills-heading {
-    order: 1;
-    flex: 0 0 100%;
-  }
-  
-  #my-skills {
-    border: dotted rgb(130, 178, 255) 1px;
-    padding: 10px;
-    margin: 10px;
-    order: 2;
-    flex: 0 0 40%;
-    background-color: #ee4c7c;
-  }
-  
-  #learning-list {
-    border: dotted rgb(130, 178, 255) 1px;
-    margin: 10px;
-    order: 3;
-    flex: 0 0 40%;
-    padding: 10px;
-    background-color: #ee4c7c;
-  }
-  
-  @media (max-width: 800px) {
-    #skills {
-      display: flex;
-      justify-content: center;
-      flex-flow: columun wrap;
-    }
-    #my-skills {
-      order: 2;
-      flex: 0 0 80%;
-    }
-  
-    #learning-list {
-      order: 3;
-      flex: 0 0 80%;
-    }
-  }
-  
-  #projects {
-    height: auto;
-    margin: auto;
-    font-size: 1rem;
-  }
-  
+}
 
-  .flex-wrapper-projects {
-    display: flex;
-    flex-flow: row wrap;
-    text-align: center;
-    justify-content: center;
-    align-content: center;
-    padding: 5px;
-    margin: 5px;
-    width: 100%;
-    font-size: 0.9rem;
-    color: black;
-  }
-  #top-left-projects {
-    order: 1;
-    background-color: #ee4c7c;
-    margin: 15px;
-    padding: 15px;
-    flex: 0 0 40%;
-  }
-  #top-right-projects {
-    order: 2;
-    background-color: #ee4c7c;
-    margin: 15px;
-    padding: 15px;
-    flex: 0 0 40%;
-  }
-  #bottom-left-projects {
-    order: 3;
-    background-color: #ee4c7c;
-    margin: 15px;
-    padding: 15px;
-    flex: 0 0 40%;
-  }
-  #bottom-right-projects {
-    order: 4;
-    background-color: #ee4c7c;
-    margin: 15px;
-    padding: 15px;
-    flex: 0 0 40%;
-  }
-  .project-example-img{
-    width: 90%;
-    height: auto;
-    margin:auto;
-    padding: 10px;
-  }
-  @media (max-width: 800px) {
-    .flex-wrapper-projects {
-      display: flex;
-      flex-flow: row wrap;
-      text-align: center;
-      justify-content: center;
-      align-content: center;
-      padding: 5px 0;
-      margin: 5px 0;
-      width: 100%;
-      font-size: 0.9rem;
-      color: black;
-    }
-    #top-left-projects {
-      order: 1;
-      margin: 10px;
-      padding: 10px;
-      flex: 0 0 80%;
-    }
-    #top-right-projects {
-        order: 2;
-        margin: 10px;
-        padding: 10px;
-        flex: 0 0 80%;
-      }
-    #bottom-left-projects {
-      order: 3;
-      margin: 10px;
-      padding: 10px;
-      flex: 0 0 80%;
-    }
-    #bottom-right-projects {
-      order: 4;
-      margin: 10px;
-      padding: 10px;
-      flex: 0 0 80%;
-    }
-  }
-  .form-control {
-    display: block;
-    width: 70%;
-    height: 1rem;
-    padding: 0.375rem 0.75rem;
-    background-color: #fff;
-    background-clip: padding-box;
-    border-radius: 0.5rem;
-    margin: auto;
-  }
+
+.red-text{
+  color:red;
+}
+.open-container{
+  background-color: #333333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  justify-content: center;
+}
+
+.hero-img{
+  width:30vw;
+  height:30vh;
+  margin-bottom: 10px;
+}
+
+.section-container {
+  display: flex;
+  align-items: center;
+  background-color:rgb(252, 252, 252);
+  box-shadow: 10px 10px 20px rgb(172, 172, 172);
+  border-radius: 10px;
+  padding: 10px;
+  width:90%;
+}
+.hero-text {
+  margin: auto;
+  text-align: center;
   
-  .form-control:focus {
-    border-color: #80bdff;
-    outline: 0;
-  }
-  
-  form {
-    color: #EEA47FFF;
-  }
-  
-  #enquiry {
-    height: 30px;
-    padding: 10px;
-  }
-  #submit {
-    margin: 10 0 40 0px;
-  }
-  footer {
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      text-align: center;
-      margin: 20px 0;
-      padding-top: 10px;
-      color: #EEA47FFF;
-    }
-  @media (max-width:800px){ footer{
-    width:100%;
-    margin:0;
-    }
-  }
-  
+}
+
+@keyframes hero-fade {
+  0% {opacity: 0%;}
+  100% {opacity: 100%}
+}
