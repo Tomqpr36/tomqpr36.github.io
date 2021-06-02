@@ -75,7 +75,6 @@ nav li:hover {
 
 .red-text{
   color:red;
-  font-family: 'Courier New', Courier, monospace;
 }
 .open-container{
   background-color: #333333;
@@ -121,6 +120,10 @@ nav li:hover {
 }
 #our-range{
   flex: 100%;
+}
+.red-text-range{
+  color:red;
+  font-size: 1.8rem;
 }
 #flex-list{
   flex: 50%;
