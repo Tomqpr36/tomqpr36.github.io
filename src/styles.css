@@ -37,14 +37,25 @@ li {
 h1 {
     font-size: 90px;
     margin:0;
+
+}
+h1:hover{
+    animation-name: hover-animation-wide, hover-animation-color;
+    animation-duration: 2s; 
 }
 h2 {
     font-size: 50px;
 }
+
 p {
     margin:0;
     font-weight: 300;
     font-size: 30px;
+}
+
+#web-dev:hover{
+    animation-name: hover-animation-color;
+    animation-duration: 2s; 
 }
 .subtext{
     font-size: 1vw;
@@ -227,3 +238,35 @@ a {
       margin: 10px;
       border-radius: 0.5rem;
   }
+
+  @keyframes hover-animation-wide {
+    0%{
+        font-size: 90px;
+    }
+    50%{
+        font-size: 120px
+    }
+    100% {
+        font-size:90px
+    }
+}
+@keyframes hover-animation-color {
+    0%{
+        color: white;
+    }
+    20%{
+        color:aqua;
+    }
+    40%{
+        color:#ef744b;
+    }
+    60%{
+        color:fuchsia ;
+    }
+    80%{
+        color:slateblue;
+    }
+    100% {
+        color: white;
+    }
+}
