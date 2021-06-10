@@ -2,6 +2,12 @@ const grid = document.querySelector('.grid')
 const startButton = document.getElementById('start')
 const scoreDisplay = document.getElementById('score')
 const gameOverMessage = document.getElementById('game-over')
+const upBtn = document.getElementById('up')
+const leftBtn = document.getElementById('left')
+const rightBtn = document.getElementById('right')
+const downBtn =document.getElementById('down')
+const btnReveal = document.getElementById('btn-reveal')
+const screenArrows = document.querySelector('.arrow-container')
 let squares = []
 let currentSnake = [2,1,0]
 let direction = 1
@@ -42,7 +48,7 @@ function startGame() {
     direction = 1
     intervalTime = 1000
     generateApple()
-    //readd the class of snake to our new currentSnake
+    //read the class of snake to our new currentSnake
     currentSnake.forEach(index => squares[index].classList.add('snake'))
     timerId = setInterval(move, intervalTime)
     gameOverMessage.style.display = "none"
@@ -125,5 +131,31 @@ function control(e) {
         direction = +width
     }
 }
+
+// On screen buttons
+
+upBtn.addEventListener('click' , function() {
+    direction = - width
+})
+rightBtn.addEventListener('click' , function() {
+    direction = 1
+})
+leftBtn.addEventListener('click' , function() {
+    direction = - 1
+})
+up
+
+downBtn.addEventListener('click' , function() {
+    direction = width
+})
+
+btnReveal.addEventListener('click' , function() {
+    if (screenArrows.style.display == "none"){
+    screenArrows.style.display = "flex"
+    } else {
+        screenArrows.style.display = "none"
+    }}
+)
+
 document.addEventListener('keyup', control)
 startButton.addEventListener('click', startGame)
