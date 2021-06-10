@@ -20,12 +20,11 @@ h1 {
 h2 {
     color: rgb(255, 94, 0);
 }
-.start-game-buttons {
-    width: auto;
+#start {
+    padding: 10px;
+    width: 50%;
     background-color:white;
     font-size: 20px;
-    align-content: center;
-    justify-content:center;
 }
 #start:active{
     color: black;
