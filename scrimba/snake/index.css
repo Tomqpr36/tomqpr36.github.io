@@ -1,14 +1,40 @@
 html, body {
-    margin: 10;
-    padding: 10;
+    margin: 0 auto;
+    padding: 10px;
+    background-color:rgba(0, 0, 0, 0.6);
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    box-shadow: 5px 5px 20px rgb(172, 172, 172);
+    font-family: 'Courier New', Courier, monospace;
 }
 
+h1 {
+    color: rgb(255, 94, 0);
+}
+
+h2 {
+    color: rgb(255, 94, 0);
+}
+button {
+    padding: 10px;
+    width: 50%;
+    background-color:white;
+    font-size: 20px;
+
+}
+button:active{
+    color: black;
+    background-color:grey;
+}
 .grid {
     display: flex;
     flex-wrap: wrap;
     width: 200px;
     height: 200px;
-    border: solid 2px black;
+    border: solid 2px rgba(255, 255, 255, 0.664);
+    box-shadow: 5px 5px 20px rgb(172, 172, 172);
 }
 
 .square {
@@ -17,10 +43,15 @@ html, body {
 }
 
 .snake {
-    background-color: green;
+    background-color: rgb(255, 94, 0);
+    border-radius: 50%;
 }
 
 .apple {
     background-color: red;
     border-radius: 50% ;
+}
+#game-over{
+    display:none;
+    color: rgb(255, 94, 0);
 }
