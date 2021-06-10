@@ -1,5 +1,7 @@
 const grid = document.querySelector('.grid')
 const startButton = document.getElementById('start')
+const hardStartButton = document.getElementById('hard-start')
+const harderStartButton = document.getElementById('harder-start')
 const scoreDisplay = document.getElementById('score')
 const gameOverMessage = document.getElementById('game-over')
 const upBtn = document.getElementById('up')
@@ -54,6 +56,18 @@ function startGame() {
     gameOverMessage.style.display = "none"
 }
 
+function hardStartGame() {
+    startGame()
+    speed = 0.75
+}
+
+function harderStartGame() {
+    startGame()
+    intervalTime = 600
+    speed = 0.6
+}
+
+
 function move() {
     if (
         (currentSnake[0] + width >= width*width && direction === width) || //if snake has hit bottom
@@ -101,7 +115,6 @@ function move() {
 function gameOver() {
     gameOverMessage.style.display = "block"
     gameOverMessage.textContent = `Gameover! You got ${score} points!`
-
 }
 
 
@@ -159,3 +172,5 @@ btnReveal.addEventListener('click' , function() {
 
 document.addEventListener('keyup', control)
 startButton.addEventListener('click', startGame)
+hardStartButton.addEventListener('click', hardStartGame)
+harderStartButton.addEventListener('click', harderStartGame)
