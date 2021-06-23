@@ -1,13 +1,12 @@
 body {
     background-color: rgb(185,225,225);
-
-}
-#container {
-    display: flex;
+    display:flex;
+    justify-content: center;
     flex-flow: column wrap;
     align-content: center;
     text-align: center;
 }
+
 .extra-categories{
     display: flex;
     flex-flow: row wrap;
