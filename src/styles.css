@@ -244,6 +244,16 @@ a {
       border-radius: 0.5rem;
   }
 
+  .project-return{
+    margin: 25px auto;
+    padding: 10px;
+  }
+.project-return a{
+    font-size: 18px;
+    font-weight: 300;
+    text-decoration: none;
+    color: black;
+}
   @keyframes hover-animation-wide {
     0%{
         font-size: 90px;
