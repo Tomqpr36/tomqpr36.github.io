@@ -147,6 +147,7 @@ p {
 .project-page-container{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 .project-page-container a{
     text-decoration: none;
