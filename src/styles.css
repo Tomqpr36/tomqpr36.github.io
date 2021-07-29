@@ -144,6 +144,15 @@ p {
         flex-wrap: wrap;    
     }
 }
+.project-page-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.project-page-container a{
+    text-decoration: none;
+    color: #1c1d25;
+}
+
 .project-card {
     width: 300px;
     height: 500px;
